@@ -49,7 +49,7 @@ npm run dev
 
 Then visit: http://localhost:3000
 
-# 🧑‍💻 Deployment
+## 🧑‍💻 Deployment
 
 This site is deployed using **Vercel** for seamless integration with GitHub and optimized builds for production.
 
