@@ -94,7 +94,7 @@ export default function Home() {
           // paddingTop: "60px",
         }}
       >
-        <div className="max-w-4xl mx-auto px-4 py-16 text-gray-200">
+        <div className="max-w-4xl mx-auto px-4 py-8 text-gray-200">
           <BlurText
             text="Projects"
             delay={150}

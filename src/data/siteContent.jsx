@@ -2,7 +2,7 @@
 import { LuBrainCircuit, LuContact, LuFileSpreadsheet } from "react-icons/lu";
 import { FaPeopleGroup, FaRobot } from "react-icons/fa6";
 import { FiLinkedin, FiMail } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaRegFolderOpen } from "react-icons/fa";
 import { IoTerminalOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 
@@ -14,10 +14,18 @@ export const ProjectsCarousel = dynamic(
 // Project items
 export const projectData = [
   {
+    title: "Bit by Bryan",
+    languages: "Next.js, Tailwind CSS, Framer Motion, etc...",
+    description:
+      "My personal portfolio website. This site showcases my skills, experience, and selected projects in a dynamic, interactive, and visually rich format.",
+    link: "https://github.com/Asere231/my-portfolio",
+    Icon: FaRegFolderOpen,
+  },
+  {
     title: "NN and CNN Training",
     languages: "Python, PyTorch, Jupyter Notebook",
     description:
-      "Trained various neural networks for image classification. Regular NNs for MNIST digit recognition, and CNNs for CIFAR-10 classification",
+      "Trained various neural networks for image classification. Regular NNs for MNIST digit recognition, and CNNs for CIFAR-10 classification.",
     link: "https://github.com/Asere231/Robot-Vision/blob/main/project2.ipynb",
     Icon: LuBrainCircuit,
   },
