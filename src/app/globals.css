@@ -19,8 +19,54 @@
   }
 }
 
+:root {
+  --bronze: #130d0a;
+}
+
+#content {
+  background-color: var(--bronze);
+}
+
 body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+}
+
+/* Make sections always fill full width */
+section {
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+p {
+  color: #ede0d5;
+  line-height: 150%;
+}
+
+/* hide horizontal scrollbar in WebKit & Firefox */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+
+  margin: 0px;
+  background-color: black;
+  margin-top: 50vh;
+  margin-bottom: 100vh;
+} */

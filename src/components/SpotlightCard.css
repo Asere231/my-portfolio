@@ -1,0 +1,48 @@
+.card-spotlight {
+  display: flex; /* now a block-level flex box */
+  width: fit-content; /* shrink to content */
+  margin: 0 auto; /* auto L/R margins center a block */
+  flex-direction: column; /* stack children vertically */
+  justify-content: center;
+  align-items: center;
+
+  /* now it will only be as wide as its content */
+  width: fit-content;
+
+  position: relative;
+  border-radius: 1.5rem;
+  border: 1px solid #222;
+  background-color: #111;
+  padding: 2rem;
+  overflow: hidden;
+
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgba(255, 255, 255, 0.05);
+}
+
+.card-spotlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 80%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.card-spotlight:hover::before,
+.card-spotlight:focus-within::before {
+  opacity: 0.6;
+}
+
+#projects {
+  object-fit: fill;
+}
