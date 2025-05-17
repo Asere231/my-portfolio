@@ -57,5 +57,5 @@ This site is deployed using **Vercel** for seamless integration with GitHub and 
 
 Check out the Contact section in the website footer for:
 
-- LinkedIn
-- Email
+- [LinkedIn](https://www.linkedin.com/in/bryananeyro/)
+- [Email](mailto:brah0211@outlook.com)
