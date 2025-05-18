@@ -43,8 +43,8 @@ export default function Home() {
           {/* Section heading */}
           <BlurText
             text="Bryan Aneyro Hernandez"
-            delay={150}
-            animateBy="words"
+            delay={50}
+            animateBy="letters"
             direction="top"
             onAnimationComplete={handleAnimationComplete}
             className="text-2xl mb-8"
