@@ -14,20 +14,28 @@ export const ProjectsCarousel = dynamic(
 // Project items
 export const projectData = [
   {
-    title: "Bit by Bryan",
-    languages: "Next.js, Tailwind CSS, Framer Motion, etc...",
-    description:
-      "My personal portfolio website. This site showcases my skills, experience, and selected projects in a dynamic, interactive, and visually rich format.",
-    link: "https://github.com/Asere231/my-portfolio",
-    Icon: FaRegFolderOpen,
-  },
-  {
     title: "NN and CNN Training",
     languages: "Python, PyTorch, Jupyter Notebook",
     description:
       "Trained various neural networks for image classification. Regular NNs for MNIST digit recognition, and CNNs for CIFAR-10 classification.",
     link: "https://github.com/Asere231/Robot-Vision/blob/main/project2.ipynb",
     Icon: LuBrainCircuit,
+  },
+  {
+    title: "RE-RASSOR: New Arm",
+    languages: "ROS2, Gazebo, MoveIt2, Python, Ubuntu",
+    description:
+      "Contributed to the development of a robotic arm with 4 joints for a lunar rover in a year-long Senior Design project.",
+    link: "https://github.com/Asere231/FSI-CS-Arm",
+    Icon: FaRobot,
+  },
+  {
+    title: "Bit by Bryan",
+    languages: "Next.js, Tailwind CSS, Framer Motion, etc...",
+    description:
+      "My personal portfolio website. This site showcases my skills, experience, and selected projects in a dynamic, interactive, and visually rich format.",
+    link: "https://github.com/Asere231/my-portfolio",
+    Icon: FaRegFolderOpen,
   },
   {
     title: "GroupFinder",
@@ -52,14 +60,6 @@ export const projectData = [
       "This project is a complete compiler for the PL/0 programming language, built over a sequence of assignments for my System Software course.",
     link: "https://github.com/Asere231/PL-0-Compiler",
     Icon: IoTerminalOutline,
-  },
-  {
-    title: "RE-RASSOR: New Arm",
-    languages: "ROS2, Gazebo, MoveIt2, Python, Ubuntu",
-    description:
-      "Contributed to the development of a robotic arm with 4 joints for a lunar rover in a year-long Senior Design project.",
-    link: "https://github.com/Asere231",
-    Icon: FaRobot,
   },
 ];
 
