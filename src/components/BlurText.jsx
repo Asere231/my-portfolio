@@ -82,10 +82,16 @@ const BlurText = ({
       ref={ref}
       className={className}
       style={{
+        fontFamily: "KoreanCalligraphy",
+        fontSize: "70px",
         display: "flex",
         flexWrap: "wrap",
-        fontSize: "70px",
-        fontFamily: "Harukaze",
+        lineHeight: "1.1", // Prevents text cropping
+        overflow: "visible", // Ensures text isn't clipped
+        WebkitFontSmoothing: "antialiased", // Helps in Safari
+        paddingTop: "0.2em", // Adds breathing room above text
+        willChange: "transform, filter, opacity",
+        transform: "translateZ(0)", // Triggers hardware acceleration
       }}
     >
       {elements.map((segment, index) => {

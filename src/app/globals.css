@@ -19,6 +19,47 @@
   }
 }
 
+@font-face {
+  font-family: "Harukaze";
+  src: url("/fonts/Harukaze.ttf") format("truetype"),
+    url("/fonts/Harukaze.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nanum Brush Script";
+  src: url("/fonts/NanumBrushScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ichimaru";
+  src: url("/fonts/iIchimaru.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yozakura";
+  src: url("/fonts/YOZAKURA-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KoreanCalligraphy";
+  src: url("/fonts/Korean_Calligraphy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bronze: #130d0a;
 }
