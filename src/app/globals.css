@@ -108,6 +108,51 @@ p {
   scrollbar-width: none; /* Firefox */
 }
 
+#scroll {
+  position: absolute; /* use fixed so it stays in view */
+  bottom: 20px; /* adjust distance from bottom */
+  left: 50%; /* center horizontally */
+  transform: translateX(-50%); /* center correction */
+
+  z-index: 1000; /* ensure it's above background layers */
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem 1rem; /* optional: some spacing */
+
+  span {
+    display: block;
+  }
+
+  svg {
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+    animation: scroll 0.95s ease-in-out alternate infinite;
+    fill: none;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 1;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 /* body {
   background: var(--background);
   color: var(--foreground);

@@ -175,18 +175,23 @@ const GooeyNav = ({
   // on-mount & on-activeIndex change, position the initial filter & text
   useEffect(() => {
     if (!navRef.current || !containerRef.current) return;
-    const currentLi = navRef.current.querySelectorAll("li")[activeIndex];
-    if (currentLi) {
-      updateEffectPosition(currentLi);
+
+    const activeLi = navRef.current.querySelectorAll("li")[activeIndex];
+    if (activeLi) {
+      updateEffectPosition(activeLi);
       textRef.current?.classList.add("active");
     }
 
-    const ro = new ResizeObserver(() => {
-      const updatedLi = navRef.current.querySelectorAll("li")[activeIndex];
-      if (updatedLi) updateEffectPosition(updatedLi);
+    const resizeObserver = new ResizeObserver(() => {
+      const currentActiveLi =
+        navRef.current?.querySelectorAll("li")[activeIndex];
+      if (currentActiveLi) {
+        updateEffectPosition(currentActiveLi);
+      }
     });
-    ro.observe(containerRef.current);
-    return () => ro.disconnect();
+
+    resizeObserver.observe(containerRef.current);
+    return () => resizeObserver.disconnect();
   }, [activeIndex]);
 
   return (

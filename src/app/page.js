@@ -1,5 +1,6 @@
 "use client";
 import "@/app/globals.css";
+import { useEffect, useState } from "react";
 
 //  Components
 import ParallaxHero from "@/components/ParallaxHero";
@@ -21,16 +22,15 @@ import {
 export default function Home() {
   return (
     <>
-      <GooeyNav
-        items={itemsNavBar}
-        particleCount={15}
-        particleDistances={[90, 10]}
-        particleR={100}
-        initialActiveIndex={0}
-        animationTime={600}
-        timeVariance={300}
-        colors={[1, 2, 3, 1, 2, 3, 1, 4]}
-      />
+      <div id="scroll">
+        <span>SCROLL</span>
+
+        <svg viewBox="0 0 24 24">
+          <line id="st1" x1="12" y1="1" x2="12" y2="22.5" />
+          <line id="st1" x1="12.1" y1="22.4" x2="18.9" y2="15.6" />
+          <line id="st1" x1="11.9" y1="22.4" x2="5.1" y2="15.6" />
+        </svg>
+      </div>
       {/* 1) Your parallax hero */}
       <ParallaxHero />
       {/* 2) The content goes here */}
