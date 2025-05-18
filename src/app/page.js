@@ -55,7 +55,7 @@ export default function Home() {
             className="mt-6 text-lg leading-relaxed columns-1 md:columns-2 md:column-gap-8"
             style={{ fontFamily: "Verdana", fontSize: "20px" }}
           >
-            <p>
+            <p className="mb-4 md:mb-0">
               Hi there! I’m a proud University of Central Florida alum with a
               B.Sc. in Computer Science (GPA 3.48). I love turning ideas into
               real-world software—whether it’s low-level systems code, robotics
@@ -63,7 +63,7 @@ export default function Home() {
               learn new technologies, solve tricky problems, and write clean,
               maintainable code that scales.
             </p>
-            <p>
+            <p className="mb-4 md:mb-0">
               I’m actively pursuing roles as a Software Engineer, Backend
               Developer, or Full-Stack Engineer, where I can leverage Python,
               RESTful API design, cloud-native services, and React/Next.js. Feel
