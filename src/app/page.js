@@ -40,15 +40,45 @@ export default function Home() {
         style={{ paddingBottom: "60px" }}
       >
         <div className="max-w-4xl mx-auto px-4 py-16 text-gray-200">
-          {/* Section heading */}
-          <BlurText
-            text="Bryan Aneyro Hernandez"
-            delay={50}
-            animateBy="letters"
-            direction="top"
-            onAnimationComplete={handleAnimationComplete}
-            className="text-2xl mb-8"
-          />
+          {/* Mobile Layout - Hidden on md screens and up */}
+          <div className="block md:hidden mb-8">
+            <BlurText
+              text="Bryan"
+              delay={10}
+              animateBy="letters"
+              direction="top"
+              className="block"
+              style={{ marginBottom: "0px" }}
+            />
+            <BlurText
+              text="Aneyro"
+              delay={70}
+              animateBy="letters"
+              direction="top"
+              className="block"
+              style={{ marginBottom: "0px" }}
+            />
+            <BlurText
+              text="Hernandez"
+              delay={130}
+              animateBy="letters"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="block"
+            />
+          </div>
+
+          {/* Desktop Layout - Hidden on small screens, shown on md and up */}
+          <div className="hidden md:block">
+            <BlurText
+              text="Bryan Aneyro Hernandez"
+              delay={50}
+              animateBy="letters"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="text-2xl mb-8"
+            />
+          </div>
 
           {/* Multi-column text */}
           <div
