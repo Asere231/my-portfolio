@@ -82,7 +82,7 @@ const BlurText = ({
       ref={ref}
       className={className}
       style={{
-        fontFamily: "Yozakura",
+        fontFamily: "KoreanCalligraphy",
         fontSize: "70px",
         display: "flex",
         flexWrap: "wrap",

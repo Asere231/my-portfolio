@@ -34,14 +34,16 @@
 }
 
 .gooey-nav-container {
-  font-family: "Yozakura", cursive;
+  font-family: "KoreanCalligraphy", cursive;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
 
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9);
+  /* Responsive width: fit-content for large screens, constrained for small */
   width: fit-content;
+  max-width: calc(100vw - 2rem); /* Leave some margin on small screens */
   margin: 0 auto;
   text-align: center;
   height: 3rem;
@@ -72,6 +74,91 @@
   z-index: 3;
   color: white;
   text-shadow: 0 1px 1px hsl(205deg 30% 10% / 0.2);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .gooey-nav-container {
+    /* Reduce padding on smaller screens */
+    padding: 0.3rem 0.6rem;
+    font-size: 0.4rem;
+  }
+
+  .gooey-nav-container nav ul {
+    /* Reduce gap between items on smaller screens */
+    gap: 1.2em;
+    padding: 0 0.3em;
+  }
+
+  .gooey-nav-container nav ul li a {
+    /* Smaller text on tablets */
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gooey-nav-container {
+    padding: 0.2rem 0.3rem;
+    /* Ensure container doesn't exceed screen width */
+    max-width: calc(100vw - 1rem);
+  }
+
+  .gooey-nav-container nav ul {
+    /* Minimal gap on very small screens */
+    gap: 0.5em;
+    padding: 0 0.1em;
+  }
+
+  .gooey-nav-container nav ul li {
+    /* Reduce padding on navigation items */
+    padding: 0 0.2em;
+  }
+
+  .gooey-nav-container nav ul li a {
+    /* Even smaller text on phones */
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .gooey-nav-container {
+    padding: 0.15rem 0.2rem;
+    max-width: calc(100vw - 0.8rem);
+  }
+
+  .gooey-nav-container nav ul {
+    gap: 0.3em;
+    padding: 0;
+  }
+
+  .gooey-nav-container nav ul li {
+    padding: 0 0.15em;
+  }
+
+  .gooey-nav-container nav ul li a {
+    /* Minimum readable size */
+    font-size: 18px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+  .gooey-nav-container {
+    padding: 0.1rem 0.15rem;
+    max-width: calc(100vw - 0.6rem);
+  }
+
+  .gooey-nav-container nav ul {
+    gap: 0.2em;
+  }
+
+  .gooey-nav-container nav ul li {
+    padding: 0 0.1em;
+  }
+
+  .gooey-nav-container nav ul li a {
+    font-size: 16px;
+  }
 }
 
 .gooey-nav-container nav ul li {
@@ -132,7 +219,9 @@
   z-index: 1;
 }
 
+/* Text after selected item */
 .gooey-nav-container .effect.text {
+  font-size: 20px;
   color: white;
   transition: color 0.3s ease;
 }

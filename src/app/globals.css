@@ -60,6 +60,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Science Fair";
+  src: url("/fonts/science-fair.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --bronze: #130d0a;
 }
