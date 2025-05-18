@@ -95,7 +95,7 @@ export const itemsGlassIcons = [
     icon: <LuFileSpreadsheet />,
     color: "orange",
     label: "Resume",
-    link: "https://www.linkedin.com/in/bryananeyro/",
+    link: "https://github.com/Asere231/Resume",
   },
 ];
 
