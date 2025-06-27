@@ -38,6 +38,14 @@ export const projectData = [
     Icon: FaRegFolderOpen,
   },
   {
+    title: "UnearthedTruths",
+    languages: "Java Spring Boot, Next.js, PostgreSQL, Docker",
+    description:
+      "Full-stack app mapping archaeological findings linked to Biblical history, featuring JWT-secured admin tools. View the demo on my LinkedIn profile and click the button below to explore the API code!",
+    link: "https://github.com/Asere231/UnearthedTruths",
+    Icon: FaMapMarkedAlt,
+  },
+  {
     title: "GroupFinder",
     languages: "MERN Stack, Flutter",
     description:
