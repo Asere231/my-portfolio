@@ -2,7 +2,7 @@
 import { LuBrainCircuit, LuContact, LuFileSpreadsheet } from "react-icons/lu";
 import { FaPeopleGroup, FaRobot } from "react-icons/fa6";
 import { FiLinkedin, FiMail } from "react-icons/fi";
-import { FaGithub, FaRegFolderOpen } from "react-icons/fa";
+import { FaGithub, FaRegFolderOpen, FaMapMarkedAlt } from "react-icons/fa";
 import { IoTerminalOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 
