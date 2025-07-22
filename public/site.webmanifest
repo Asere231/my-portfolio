@@ -1,0 +1,24 @@
+{
+  "name": "Bryan Aneyro Hernandez - Full Stack Developer",
+  "short_name": "Bit by Bryan",
+  "description": "Full Stack Developer & Software Engineer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#130d0a",
+  "theme_color": "#130d0a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en-US"
+}

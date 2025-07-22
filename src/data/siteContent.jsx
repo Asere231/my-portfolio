@@ -2,7 +2,12 @@
 import { LuBrainCircuit, LuContact, LuFileSpreadsheet } from "react-icons/lu";
 import { FaPeopleGroup, FaRobot } from "react-icons/fa6";
 import { FiLinkedin, FiMail } from "react-icons/fi";
-import { FaGithub, FaRegFolderOpen, FaMapMarkedAlt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaRegFolderOpen,
+  FaMapMarkedAlt,
+  FaCogs,
+} from "react-icons/fa";
 import { IoTerminalOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 
@@ -44,6 +49,15 @@ export const projectData = [
       "Full-stack app mapping archaeological findings linked to Biblical history, featuring JWT-secured admin tools. View the demo on my LinkedIn profile and click the button below to explore the API code!",
     link: "https://github.com/Asere231/UnearthedTruths",
     Icon: FaMapMarkedAlt,
+  },
+  {
+    title: "FinanceFlow",
+    languages:
+      "Java 21, Spring Boot, Spring Cloud, Spring Data JPA/Hibernate, Spring Security",
+    description:
+      "A Spring Boot microservices platform for personal finance management—featuring modular services for authentication, accounts, transactions, categories, budgets, goals",
+    link: "https://github.com/Asere231/FinanceFlow",
+    Icon: FaCogs,
   },
   {
     title: "GroupFinder",
